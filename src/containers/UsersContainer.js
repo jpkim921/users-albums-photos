@@ -9,10 +9,12 @@ class UsersContainer extends Component {
   }
 
   render() {
+    let { users } = this.props;
+
     return (
       <div>
         <h1>Users Container</h1>
-        <Table />
+        <Table users={users} />
       </div>
     );
   }
@@ -20,7 +22,7 @@ class UsersContainer extends Component {
 
 const mapStateToProps = state => {
   return {
-    users: state.users
+    users: state.users.users
   };
 };
 

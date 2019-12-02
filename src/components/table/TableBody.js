@@ -1,13 +1,36 @@
-import React, {Component} from 'react'
+import React, { Component } from "react";
 
-export function TableBody() {
+// export default class TableBody extends Component {
+//   render() {
+//     return (
+//       <tbody>
+//         <tr>
+//           <td>{this.props.user.name}</td>
+//           <td>Guard Dog</td>
+//           <td>
+//             <button>Edit</button>
+//           </td>
+//           <td>
+//             <button>Delete</button>
+//           </td>
+//         </tr>
+//       </tbody>
+//     );
+//   }
+// }
+
+export function TableBody(props) {
   return (
     <tbody>
       <tr>
-        <td>Sam</td>
-        <td>Guard Dog</td>
-        <td><button>Edit</button></td>
-        <td><button>Delete</button></td>
+        <td>{props.user.name}</td>
+        <td>Link to album</td>
+        <td>
+          <button>Edit</button>
+        </td>
+        <td>
+          <button>Delete</button>
+        </td>
       </tr>
     </tbody>
   );
