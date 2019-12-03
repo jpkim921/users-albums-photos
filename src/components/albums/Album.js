@@ -1,10 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
+import {Link} from "react-router-dom";
 
 export default function Album(props) {
+
+  let {album} = props
+  // console.log(props)
+
   return (
     <div>
-      <h2>Album Component</h2>
-      {/* need to fill out the album info */}
+      <Link to={`/album/${album.userId}/${album.title}`}>{album.title}</Link>
     </div>
   );
 }

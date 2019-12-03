@@ -4,6 +4,7 @@ import { fetchAlbums } from "./../actions/albumsActions";
 import Albums from "./../components/albums/Albums";
 
 class AlbumsContainer extends Component {
+
   componentDidMount() {
     let { userId } = this.props.match.params;
     this.props.fetchAlbums(userId);

@@ -4,6 +4,7 @@ import { fetchUsers } from "./../actions/usersActions";
 import Table from "./../components/table/Table";
 
 class UsersContainer extends Component {
+
   componentDidMount() {
     this.props.fetchUsers();
   }

@@ -2,12 +2,13 @@ import React from "react";
 import Album from "./Album";
 
 export default function Albums(props) {
+  
+  let {albums} = props
+
   return (
     <div>
-      <h2>Albums Component</h2>
-      {props.albums.map((album, key) => {
-        return <Album album={album} key={key} />;
-      })}
+      <h2>Albums</h2>
+      {albums.map((album, key) => <Album key={key} album={album} />)}
     </div>
   );
 }
