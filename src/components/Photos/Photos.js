@@ -6,7 +6,7 @@ export default function Photos(props) {
 
   return (
     <div>
-      <h2>Photos</h2>
+      <h2>PUT TITLE OF PHOTO ALBUM HERE</h2>
       <div className="photos-flex-display">
         {photos.map((photo, key) => (
           <Photo key={key} photo={photo} />
