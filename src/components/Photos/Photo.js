@@ -6,7 +6,7 @@ export default function Photo(props) {
 
   return (
     <div>
-        <img src={photo.thumbnailUrl} alt="thumbnail image" />
+        <img className="photo" src={photo.thumbnailUrl} alt="thumbnail image" />
     </div>
   );
 }

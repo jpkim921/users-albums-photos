@@ -3,8 +3,13 @@
 
 
 .photos-flex-display {
+    width: 65%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+}
+
+
+.photo {
+    width: 80%;
+    margin: auto 15px;
 }
