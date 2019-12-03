@@ -15,7 +15,6 @@ class AlbumsContainer extends Component {
 
     return (
       <div>
-        <h1>Albums Container</h1>
         <Albums albums={albums} />
       </div>
     );

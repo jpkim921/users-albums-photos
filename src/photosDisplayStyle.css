@@ -1,0 +1,10 @@
+/* styling for Photos component to display the photos as flex */
+
+
+
+.photos-flex-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

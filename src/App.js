@@ -11,7 +11,10 @@ function App() {
         <Switch>
           <Route exact path="/" component={UsersContainer} />
           <Route path="/albums/:userId" component={AlbumsContainer} />
-          <Route path="/albums/:userId/:albumTitle" component={PhotosContainer} />
+          <Route
+            path="/album/:userId/:albumId"
+            component={PhotosContainer}
+          />
         </Switch>
       </Router>
     </div>

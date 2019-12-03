@@ -8,7 +8,7 @@ export default function Album(props) {
 
   return (
     <div>
-      <Link to={`/album/${album.userId}/${album.title}`}>{album.title}</Link>
+      <Link to={`/album/${album.userId}/${album.id}`}>{album.title}</Link>
     </div>
   );
 }
